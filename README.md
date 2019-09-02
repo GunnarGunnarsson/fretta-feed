@@ -87,3 +87,18 @@ Research other websites
 Repeat the process for those that have rss feeds
 Create specialized scrapers for those that don't have rss feeds
 Add a marker that signifies paid stories
+
+
+### Sites with RSS feeds:
+visir.is                    (https://www.visir.is/rss/allt)
+stundin.is                  (https://stundin.is/rss/)
+mbl.is                      (several feeds: https://www.mbl.is/feeds/)
+grapevine.is                (https://grapevine.is/feed/)
+dv.is                       (https://dv.is/feed/)
+romur.is                    (https://romur.is/feed/)
+kjarninn.is                 (https://kjarninn.is/feed/)
+ruv.is                      (several feeds: https://www.ruv.is/rss)
+vb.is                       (https://www.vb.is/rss/)
+
+### Sites not with RSS feeds:
+frettabladid.is
