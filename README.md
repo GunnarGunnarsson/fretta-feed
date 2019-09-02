@@ -66,3 +66,24 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Tutorial
+https://www.valentinog.com/blog/babel/
+
+
+### To do:
+Read rss feed from one page (e.g. visir.is)
+Display accordion for every news story
+    In the text box, write the link to the story
+Fetch the text of the story
+Display the text in the accordion and move/style the link
+Fetch the date of the story and apply to the header of the accordion item
+Fetch a tag for the story (e.g. business, sports, etc.)
+Create a filter for the stories
+    Date and/or tag
+Research other websites
+    Do they have rss feeds or do they need to be scraped
+Repeat the process for those that have rss feeds
+Create specialized scrapers for those that don't have rss feeds
+Add a marker that signifies paid stories
