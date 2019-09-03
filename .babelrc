@@ -1,3 +1,9 @@
+// Modern javascript is written in ES6 or ES7, but not every browser understands this modern javascript,
+// it's at this juncture we need babel to do the heavy lighting for us. Babel is a tool-chain that is
+// mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in
+// current and older browsers or environments.
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+  // Ensures that babel transpiles our react code, which is JSX and any other ES6+ code we have to ES5 cod
+  "presets": ["@babel/env", "@babel/react"],
+  "plugins": ["@babel/plugin-proposal-class-properties", "@babel/plugin-transform-runtime"]
 }
