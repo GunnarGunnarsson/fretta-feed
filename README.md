@@ -2,17 +2,21 @@
 
 TODO: write info about installation, build and launch
 
-### To do:
-Read rss feed from one page (e.g. visir.is)
+### Done:
+Read rss feed from one page
     Fetch the link to the story
     Fetch the title of the story
     Fetch the text contents of the story
+    Fetch the date of the story
 Write the story objects to console
+
+
+### To do:
 Display accordion for every news story
     Display the title in the accordion
     Display the text in the accordion
     In the text box, write the link to the story
-Fetch the date of the story and apply to the header of the accordion item
+    Apply the publishing date to the header of the accordion item
 Fetch a tag for the story (e.g. business, sports, etc.)
 Create a filter for the stories
     Date and/or tag
