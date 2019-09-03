@@ -1,10 +1,10 @@
 {
-  "name": "proqoda-react-webpack",
+  "name": "fretta-feed",
   "version": "1.0.0",
-  "description": "ReactJS template created with Webpack",
+  "description": "Minimized collection of Icelandic news sites",
   "main": "index.js",
-  "repository": "git@github.com:proqoda/proqoda-react-webpack.git",
-  "author": "Proqoda AB",
+  "repository": "http://github.com/GunnarGunnarsson/fretta-feed.git",
+  "author": "Gunnar Gunnarsson",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.3.3",
@@ -43,8 +43,6 @@
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-react-hooks": "^1.4.0",
     "express": "^4.16.4",
-    "firebase": "5.8.0",
-    "google-map-react": "^1.1.2",
     "image-webpack-loader": "^4.6.0",
     "path": "^0.12.7",
     "react": "^16.8.1",

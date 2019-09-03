@@ -14,7 +14,7 @@
       "quantity": 1
     }
   },
-  "name": "nordic-mapping-tool",
+  "name": "fretta-feed",
   "scripts": {
   },
   "stack": "heroku-18"
