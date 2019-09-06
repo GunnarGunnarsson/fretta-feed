@@ -1,14 +1,29 @@
 import React from 'react';
-import Hero from './components/Hero';
-import { withStyles } from '@material-ui/core/styles';
-import theme from '../modules/theme.js';
+import PageTitle from './components/PageTitle';
+import { connect } from 'react-redux';
 
-const Home = () => {
-  return (
-    <React.Fragment>
-      <Hero />
-    </React.Fragment>
-  );
-};
+class Home extends React.Component {
+  componentDidMount () {
+  }
 
-export default withStyles(theme)(Home);
+  state = {
+    bla: 'ble'
+  };
+
+  render () {
+    console.log(this.props);
+    return (
+      <React.Fragment>
+        <PageTitle />
+      </React.Fragment>
+    );
+  }
+}
+
+const mapStateToProps = state => ({
+  articles: state.articles
+});
+
+export default connect(
+  mapStateToProps
+)(Home);
