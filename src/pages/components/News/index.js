@@ -5,6 +5,7 @@ import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
+import { StyledContent } from './style.js';
 
 const ExpansionPanel = withStyles({
   root: {
@@ -55,7 +56,7 @@ const News = ({ articles }) => {
 
   if (Object.keys(articles).length !== 0 && articles.constructor === Object) {
     return (
-      <div>
+      <StyledContent>
         {articles.items.map(function (article, index) {
           return (
             <ExpansionPanel key={index} square expanded={expanded === index} onChange={handleChange(index)}>
@@ -63,14 +64,12 @@ const News = ({ articles }) => {
                 <Typography>{article.title}</Typography>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
-                <Typography>
-                  {article.content}
-                </Typography>
+                <div dangerouslySetInnerHTML={{ __html: article.content }} />
               </ExpansionPanelDetails>
             </ExpansionPanel>
           );
         })}
-      </div>
+      </StyledContent>
     );
   } else {
     return <div />;
