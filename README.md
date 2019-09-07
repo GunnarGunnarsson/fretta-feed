@@ -9,14 +9,16 @@ Read rss feed from one page
     Fetch the text contents of the story
     Fetch the date of the story
 Write the story objects to console
-
-
-### To do:
 Display accordion for every news story
     Display the title in the accordion
     Display the text in the accordion
     In the text box, write the link to the story
     Apply the publishing date to the header of the accordion item
+
+
+### To do:
+Fetch full stories
+Style everything
 Fetch a tag for the story (e.g. business, sports, etc.)
 Create a filter for the stories
     Date and/or tag

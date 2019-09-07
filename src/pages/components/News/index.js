@@ -58,13 +58,17 @@ const News = ({ articles }) => {
     return (
       <StyledContent>
         {articles.items.map(function (article, index) {
+          const date = new Date(article.pubDate);
+          const timestamp = `${date.toLocaleTimeString('it-IT')} ${date.toLocaleDateString()}`;
           return (
             <ExpansionPanel key={index} square expanded={expanded === index} onChange={handleChange(index)}>
               <ExpansionPanelSummary aria-controls="panel3d-content" id="panel3d-header">
                 <Typography>{article.title}</Typography>
+                <Typography>{timestamp}</Typography>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <div dangerouslySetInnerHTML={{ __html: article.content }} />
+                <Typography>{article.link}</Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
           );
