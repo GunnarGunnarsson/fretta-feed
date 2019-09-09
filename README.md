@@ -38,6 +38,6 @@ romur.is                    (https://romur.is/feed/)
 kjarninn.is                 (https://kjarninn.is/feed/)
 ruv.is                      (several feeds: https://www.ruv.is/rss)
 vb.is                       (https://www.vb.is/rss/)
+frettabladid.is             (https://www.frettabladid.is/rss/)
 
 ### Sites not with RSS feeds:
-frettabladid.is
