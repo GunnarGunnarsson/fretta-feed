@@ -6,6 +6,7 @@ import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import { connect } from 'react-redux';
 import { StyledContent } from './style.js';
+import api from '../../../services/api';
 
 const ExpansionPanel = withStyles({
   root: {
@@ -49,9 +50,13 @@ const ExpansionPanelDetails = withStyles(theme => ({
 
 const News = ({ articles }) => {
   const [expanded, setExpanded] = React.useState('panel1');
+  const [articleContent, setArticleContent] = React.useState('bla');
 
-  const handleChange = panel => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
+  const handleChange = (link, panel) => (event, newExpanded) => {
+    api.getFullStory(link).then(text => {
+      setExpanded(newExpanded ? panel : false);
+      setArticleContent(text);
+    });
   };
 
   if (Object.keys(articles).length !== 0 && articles.constructor === Object) {
@@ -61,13 +66,13 @@ const News = ({ articles }) => {
           const date = new Date(article.pubDate);
           const timestamp = `${date.toLocaleTimeString('it-IT')} ${date.toLocaleDateString()}`;
           return (
-            <ExpansionPanel key={index} square expanded={expanded === index} onChange={handleChange(index)}>
+            <ExpansionPanel key={index} square expanded={expanded === index} onChange={handleChange(article.link, index)}>
               <ExpansionPanelSummary aria-controls="panel3d-content" id="panel3d-header">
                 <Typography>{article.title}</Typography>
                 <Typography>{timestamp}</Typography>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
-                <div dangerouslySetInnerHTML={{ __html: article.content }} />
+                <div dangerouslySetInnerHTML={{ __html: articleContent }} />
                 <Typography>{article.link}</Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>

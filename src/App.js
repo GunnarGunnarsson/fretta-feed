@@ -10,10 +10,6 @@ import { updateStundin } from 'actions';
 
 const store = createStore(rootReducer);
 
-// api.getStundin().then(data => {
-//   store.dispatch(updateStundin(data));
-// });
-// console.log(api.getStundin());
 api.getStundin().then(data => {
   store.dispatch(updateStundin(data));
 });

@@ -14,11 +14,18 @@ Display accordion for every news story
     Display the text in the accordion
     In the text box, write the link to the story
     Apply the publishing date to the header of the accordion item
+Fetch full stories
 
 
 ### To do:
-Fetch full stories
-Style everything
+Add loading icons
+Make background image static
+Make the title pretty
+Adjust the width of the collapsed news component
+Make the date of the story fixed to the right side
+Move the link to the story to the bottom of the content panel
+Adjust the theme of the page
+Change background image to something relating to Iceland
 Fetch a tag for the story (e.g. business, sports, etc.)
 Create a filter for the stories
     Date and/or tag
